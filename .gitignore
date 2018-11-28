@@ -1,6 +1,7 @@
-data
+data/
 .ipynb_checkpoints
 *.h5
-models
+model/
+log/
 *.swp
 *.p
