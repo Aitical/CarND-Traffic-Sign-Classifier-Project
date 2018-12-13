@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 
 ### Data Set Summary & Exploration
 
-#### 1. 数据集信息
+#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 ```
 Number of training examples = 34799
@@ -21,7 +21,7 @@ Image data shape = (32, 32)
 Number of classes = 43
 ```
 
-#### 2. 数据集可视化
+#### 2. Include an exploratory visualization of the dataset.
 
 每个label对应的内容
 
@@ -31,18 +31,14 @@ Number of classes = 43
 
 ![label](https://raw.githubusercontent.com/Aitical/CarND-Traffic-Sign-Classifier-Project/master/pic/pic_one_label.png)
 
-转化为灰度图
+gray image
 
 ![灰度图](https://raw.githubusercontent.com/Aitical/CarND-Traffic-Sign-Classifier-Project/master/pic/gray.png)
 
 ### Design and Test a Model Architecture
 
-#### 1. 选择模型
 
-​	测试了LeNet和NVIDIA 的网络结构
-
-
-#### 2. 模型结构 
+#### 1. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
@@ -68,7 +64,7 @@ My final model consisted of the following layers:
 
 
 
-#### 3. 训练参数
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 ```
 rate = 0.00005 
@@ -78,23 +74,23 @@ keep_probability = 0.5
 beta = 0.01
 ```
 
-#### 4. 准确率
+#### 4. Accuracy
 
 My final model results were:
 * validation set accuracy of ?0.948
 * test set accuracy of 0.938
 
-最好一次测试集是0.954已保存在model/下
+The best one is 0.95 on test set.
 
 
 ### Test a Model on New Images
 
-找了额外5张交通标志
+#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 ![five](https://raw.githubusercontent.com/Aitical/CarND-Traffic-Sign-Classifier-Project/master/pic/%E9%A2%9D%E5%A4%96%E6%A0%87%E5%BF%97.png)
 
-测试准确率是 1.0
+accuracy is  1.0
 
-每张图片预测top5展示
+top 5 of softmax result.
 
 ![top5](https://raw.githubusercontent.com/Aitical/CarND-Traffic-Sign-Classifier-Project/master/pic/top5.png)
